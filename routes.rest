@@ -1,0 +1,32 @@
+#Local API
+# Get All Workouts
+GET http://localhost:5000/exd
+
+### Get Workout By ID
+GET http://localhost:5000/exd/664ac2812c0adfca7452647b
+
+### Get Workouts By Primary Muscle
+GET http://localhost:5000/exd/muscle/chest
+
+### Get Workouts By Force
+GET http://localhost:5000/exd/force/static
+
+### Get Workouts By Level
+GET http://localhost:5000/exd/level/beginner
+
+
+#Rnder API
+
+# Get All Workouts
+GET https://extremefitness.onrender.com/exd
+
+### Get Workout By ID
+GET https://extremefitness.onrender.com/exd/664ac2812c0adfca7452647b
+
+### Get Workouts By Primary Muscle
+GET https://extremefitness.onrender.com/exd/muscle/chest
+
+### Get Workouts By Force
+GET https://extremefitness.onrender.com/exd/force/static
+### Get Workouts By Level
+GET https://extremefitness.onrender.com/exd/level/beginner

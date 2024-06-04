@@ -1,0 +1,28 @@
+<div class="exercise-container">
+    <h1 class="exercise-title"><%= exercise.name %></h1>
+    <div class="ec-1">
+        <div class="exercise-images">
+            <% exercise.images.forEach(image => { %>
+                <img src="/images/exercises/<%= image %>" alt="<%= exercise.name %> image">
+            <% }); %>
+        </div>
+        <div class="exercise-details">
+            <p><strong>Force:</strong> <%= exercise.force %></p>
+            <p><strong>Level:</strong> <%= exercise.level %></p>
+            <p><strong>Mechanic:</strong> <%= exercise.mechanic %></p>
+            <p><strong>Equipment:</strong> <%= exercise.equipment %></p>
+            <p><strong>Primary Muscles:</strong> <%= exercise.primaryMuscles.join(', ') %></p>
+            <p><strong>Category:</strong> <%= exercise.category %></p>
+        </div>
+    </div>
+    <div class="exercise-instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <% exercise.instructions.forEach(instruction => { %>
+                <li><%= instruction %></li>
+            <% }); %>
+        </ol>
+    </div>
+</div>
+<script src="/js/main.js"></script>
+

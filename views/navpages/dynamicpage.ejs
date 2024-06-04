@@ -1,0 +1,20 @@
+<h1 id="mg-heading"><%= title %></h1>
+<div id="mgwrapper">
+    <% items.forEach(item => { %>
+        <% if (group === 'muscle') { %>
+            <a href="/exbbp?bp=<%= item.name.toLowerCase() %>" class="mg-card-link">
+        <% } else if (group === 'force') { %>
+            <a href="/exbft?ft=<%= item.name.toLowerCase() %>" class="mg-card-link">
+        <% } else if (group === 'level') { %>
+            <a href="/exblvl?lv=<%= item.name.toLowerCase() %>" class="mg-card-link">
+        <% } %>
+            <div class="mg-card-image-wrapper">
+                <% if (item.image) { %>
+                    <img src="<%= item.image %>" alt="<%= item.name %>" class="mg-card-image">
+                <% } %>
+            </div>
+            <h1 class="card-text"><%= item.name %></h1>
+        </a>
+    <% }); %>
+</div>
+<script src="js/main.js"></script>

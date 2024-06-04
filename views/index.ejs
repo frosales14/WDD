@@ -1,0 +1,157 @@
+<div>
+  <div
+    class="d-flex container-fluid container-md justify-content-center max-h-400"
+  >
+    <img
+      class="img-fluid ratio ratio-16x9 object-fit-cover object-positon-top"
+      src="images/site/hero.jpg"
+      alt="Hero image"
+    />
+  </div>
+
+  <div class="home-cards-wrapper container-fluid container-xl">
+    <h2
+      class="text-center fs-1 fw-bold my-4 text-uppercase custom-color-primary"
+    >
+      Our Tips
+    </h2>
+    <div class="d-md-flex gap-3 mb-4" id="tip-card">
+      <img
+        class="img-fluid col col-md-6 rounded"
+        id="tip-card-img"
+        src=""
+        alt=""
+      />
+      <div
+        class="d-flex flex-column py-4 justify-content-center align-items-center custom-color-primary"
+      >
+        <h2
+          id="tip-card--title"
+          class="text-start fs-2 fw-bold mb-4 w-100 text-break text-wrap"
+        ></h2>
+        <p
+          class="text-start fs-5 custom-color-primary"
+          id="tip-card-description"
+        ></p>
+      </div>
+    </div>
+
+    <div
+      class="container-fluid p-4 justify-content-center align-items-center gap-3 custom-background-primary"
+      id=""
+    >
+      <h2 class="card-title mb-4 text-light text-center text-uppercase col-12">
+        Weather Forecast
+      </h2>
+
+      <div class="d-flex flex-column justify-content-center flex-md-row">
+        <div
+          class="d-flex px-3 justify-content-center flex-column mb-4 mb-md-0 me-md-3"
+        >
+          <div class="card-body text-light text-center">
+            <img
+              alt="Weather image"
+              class="mx-auto mb-3"
+              id="current-day-weather-image"
+            />
+            <div class="forecast-date" id="current-day-forecast-date"></div>
+            <div
+              class="forecast-temperature"
+              id="current-day-forecast-temperature"
+            ></div>
+            <div
+              class="forecast-conditions"
+              id="current-day-forecast-conditions"
+            ></div>
+          </div>
+        </div>
+
+        <div
+          id=""
+          class="text-light d-flex justify-content-center align-items-center"
+        >
+          <!-- Day 1 forecast -->
+          <div
+            class="weather-outer-wrapper px-3 border-start d-flex flex-column gap-3 justify-content-center justify-content-md-start align-items-center"
+          >
+            <div class="weather-image-wrapper" id="day-1-header">
+              <img
+                alt="Weather image"
+                class="weather-image"
+                id="day-1-weather-image"
+              />
+            </div>
+            <div class="forecast-card-content text-center" id="day-1-content">
+              <div class="forecast-date" id="day-1-forecast-date"></div>
+              <div
+                class="forecast-temperature"
+                id="day-1-forecast-temperature"
+              ></div>
+              <div
+                class="forecast-conditions"
+                id="day-1-forecast-conditions"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Day 2 forecast -->
+          <div
+            class="weather-outer-wrapper px-3 border-start d-flex flex-column gap-3 justify-content-center justify-content-md-start align-items-center"
+          >
+            <div class="weather-image-wrapper" id="day-2-header">
+              <img
+                alt="Weather image"
+                class="weather-image"
+                id="day-2-weather-image"
+              />
+            </div>
+            <div class="forecast-card-content text-center" id="day-2-content">
+              <div class="forecast-date" id="day-2-forecast-date"></div>
+              <div
+                class="forecast-temperature"
+                id="day-2-forecast-temperature"
+              ></div>
+              <div
+                class="forecast-conditions"
+                id="day-2-forecast-conditions"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Day 3 forecast -->
+          <div
+            class="weather-outer-wrapper border-start px-3 d-flex flex-column gap-3 justify-content-center justify-content-md-start align-items-center"
+          >
+            <div class="weather-image-wrapper" id="day-3-header">
+              <img
+                alt="Weather image"
+                class="weather-image"
+                id="day-3-weather-image"
+              />
+            </div>
+            <div class="forecast-card-content text-center" id="day-3-content">
+              <div class="forecast-date" id="day-3-forecast-date"></div>
+              <div
+                class="forecast-temperature"
+                id="day-3-forecast-temperature"
+              ></div>
+              <div
+                class="forecast-conditions"
+                id="day-3-forecast-conditions"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <h2 class="fs-1 my-5 custom-color-primary text-uppercase text-center">
+        Recipes
+      </h2>
+      <div class="recipe-card--container" id="recipe-card"></div>
+    </div>
+  </div>
+</div>
+<script src="js/main.js"></script>
+<script src="js/api.js"></script>
+

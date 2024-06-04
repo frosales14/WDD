@@ -1,0 +1,17 @@
+<h1 id="mg-heading"><%= title %></h1>
+<div id="mgwrapper">
+    <% items.forEach(item => { %>
+        <a href="/idvex/?exid=<%= item.id %>" class="mg-card-link">
+            <div class="mg-card-image-wraper">
+                <% if (item.image) { %>
+                    <img src="<%= item.image %>" alt="<%= item.name %>" class="mg-card-image">
+                <% } %>
+            </div>
+            <h1 class="card-text">
+                <%= item.name %>
+                <img id="favorite-button-<%= item.id %>" class="favorite-button" src="/images/site/default-favorite.png" alt="Favorite" data-exid="<%= item.id %>">
+            </h1>
+        </a>
+    <% }); %>
+</div>
+<script src="js/main.js"></script>
